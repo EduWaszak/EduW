@@ -46,3 +46,18 @@ a{
     text-decoration: none;
     margin: 10px;
 }
+
+img:hover{
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.397);
+    width: 202px;
+    border-style: solid;
+    border-radius: 3px;
+    border-width: 2px;
+    border-color: green;
+
+}
+
+
+
+
+
