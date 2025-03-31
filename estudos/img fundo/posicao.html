@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>posiçao</title>
+    <style>
+        #fora{
+            position: relative;
+            background-color: blueviolet;
+            width: 600px;
+            height: 400px;
+            padding: 20px;
+            
+
+        }
+        #dentro{
+            background-size: 100% 100%;
+            position: absolute;
+            background-color: yellow;
+            width: 300px;
+            height: 200px;
+
+            top: 50%;
+            left: 50%;
+
+            transform: translate(-50px, -50px);
+           
+        }
+    </style>
+
+</head>
+<body>
+
+    <section id="fora">
+        <article id="dentro">
+
+        </article>
+    </section>
+    
+</body>
+</html>
