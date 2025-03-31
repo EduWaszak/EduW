@@ -20,7 +20,7 @@ header{
 
 
 nav{
-    display: inline-flex;
+   display: inline-flex;
   
     
 }
@@ -30,13 +30,13 @@ a{
     padding: 10px;
     border-radius: 5px;
     text-decoration: none;
-    color: black;
+    color: rgb(255, 255, 255);
     
 }
 
 a:hover{
   
-    color: white;
+    color: rgb(0, 0, 0);
 }
 
 main{
@@ -48,7 +48,10 @@ main{
 }
 
 img{
-    width: 550px;
+    width: 600px;
+    max-width: 100%;
+    
+    
 }
 main h1{
     color: #017a42;
@@ -66,8 +69,14 @@ h2{
     background-color:#C5EBD6;
     font-family: 'font';
 }
+div.imagem{
 
-div{
+    text-align: center;
+    
+}
+
+
+div#lista{
     background-color:#C5EBD6;
     
     
@@ -108,5 +117,11 @@ b{
     color: #197241;
     font-style: oblique;
    
+}
+div.imagem{
+
+    text-align: center;
+    
+
 }
 
