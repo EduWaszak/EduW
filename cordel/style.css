@@ -1,0 +1,130 @@
+
+HTML body{
+    background-color: rgba(0, 0, 0, 0.281);
+    
+    
+    
+}
+
+
+
+header{
+
+    background-color: black;
+    color: white;
+
+    text-align: center;
+
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin: -8px;
+
+
+}
+
+header h1{
+
+    font-family: Luckiest Guy, ;
+    font-style: normal;
+    font-size: 50px;
+    margin-bottom: -10px;
+    
+}
+
+header a{
+
+    color: white;
+    text-decoration: none;
+
+   
+}
+
+a:hover{
+
+    text-decoration: underline;
+}
+
+/* cabeça ☝️  */
+
+.normal{
+
+    font-family: comic sans MS, comic sans, cursive ;
+    line-height: 60px;
+    font-size: 27px;
+    padding-left: 45px;
+    
+
+    
+}
+.normal p{
+
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.imagem{
+    
+
+    font-family: comic sans MS, comic sans, cursive ;
+    line-height: 45px;
+    font-size: 25px;
+    padding-left: 30px;
+}
+
+.imagem p{
+
+    color: white;
+    background-color: rgba(0, 0, 0, 0.377);
+    width: 350px;
+    padding: 10px;
+    line-height: 60px;
+    
+    
+    
+    
+}
+
+#m1{
+
+    background-image: url(imagens/background001.jpg);
+    padding: 50px;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: right center;
+    margin-left: -10px;
+    margin-right: -10px;
+    box-shadow: inset 1px 1px 5px rgba(0, 0, 0, 0.247);
+
+}
+
+#m2{
+
+    background-image: url(imagens/background002.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    margin-left: -10px;
+    margin-right: -10px;
+    background-position: right center;
+    padding: 50px;
+    box-shadow: inset 1px 1px 5px rgba(0, 0, 0, 0.247);
+
+
+
+}
+
+footer{
+
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-size: 13px;
+    margin-left: -10px;
+    margin-right: -10px;
+    margin-bottom: -15px;
+    
+}
+footer a{
+    color: white;
+    text-decoration: none;
+
+}
