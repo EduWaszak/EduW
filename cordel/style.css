@@ -75,7 +75,7 @@ a:hover{
 
     color: white;
     background-color: rgba(0, 0, 0, 0.377);
-    width: 350px;
+    display: inline-block;
     padding: 13px;
     line-height: 60px;
     
@@ -93,7 +93,7 @@ a:hover{
     background-position: right center;
     margin-left: -10px;
     margin-right: -10px;
-    box-shadow: inset 1px 1px 5px rgba(0, 0, 0, 0.247);
+    box-shadow: inset 5px 5px 8px rgba(0, 0, 0, 0.247);
 
 }
 
@@ -106,7 +106,7 @@ a:hover{
     margin-right: -10px;
     background-position: right center;
     padding: 50px;
-    box-shadow: inset 1px 1px 5px rgba(0, 0, 0, 0.247);
+    box-shadow: inset 5px 5px 8px rgba(0, 0, 0, 0.247);
 
 
 
