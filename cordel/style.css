@@ -26,7 +26,7 @@ header h1{
 
     font-family: Luckiest Guy, ;
     font-style: normal;
-    font-size: 50px;
+    font-size: 5vw;
     margin-bottom: -10px;
     
 }
@@ -50,7 +50,7 @@ a:hover{
 
     font-family: comic sans MS, comic sans, cursive ;
     line-height: 60px;
-    font-size: 27px;
+    font-size: 3vw;
     padding-left: 45px;
     
 
@@ -67,7 +67,7 @@ a:hover{
 
     font-family: comic sans MS, comic sans, cursive ;
     line-height: 45px;
-    font-size: 25px;
+    font-size: 3vw;
     padding-left: 30px;
 }
 
@@ -76,7 +76,7 @@ a:hover{
     color: white;
     background-color: rgba(0, 0, 0, 0.377);
     width: 350px;
-    padding: 10px;
+    padding: 13px;
     line-height: 60px;
     
     
