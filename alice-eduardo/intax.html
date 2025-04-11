@@ -2,28 +2,44 @@
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8">
-  <title>Box ao lado do parágrafo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>A & E</title>
   <style>
-    .container {
-      display: flex;
-      align-items: flex-start;
-      gap: 10px; 
+
+    body{
+      background-image: url(img/fundo.jpg);
+      background-repeat: repeat;
+      background-size: cover;
     }
 
-    .box {
-      flex-shrink: 0;
-      width: 300px;
-      height: 200px;
-      background-color: #3498db;
+    div{
+
+      text-align: center;
     }
+
+    img{
+
+      border: 2px solid black;
+      border-radius: 5px;
+      box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.671);
+      width: 300px;
+
+    }
+
   </style>
 </head>
 <body>
 
-  <div class="container">
-    <p>Este é um parágrafo Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae, nihil. Eius numquam necessitatibus, et aliquid optio iusto provident hic harum nesciunt, natus culpa dolores facilis in! Facere laboriosam esse suscipit. de exemplo. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas accusantium sunt doloribus, perspiciatis tenetur, culpa illum harum, iste assumenda quia temporibus suscipit aliquid dignissimos asperiores molestias dolores. Sapiente, ut harum! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum ab culpa saepe, accusamus accusantium sequi at excepturi inventore alias. Delectus hic debitis voluptatem ad quisquam est nobis earum commodi alias? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Necessitatibus a cum animi? Libero laboriosam, sit, perferendis itaque dicta officiis nihil excepturi exercitationem fuga pariatur maxime autem provident quibusdam harum ea. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam alias quam repellendus impedit hic illo neque, vitae atque laborum, expedita ab dolor dolorem ullam odit quae molestias ut ea blanditiis.</p>
-    <div class="box"></div>
+  <div>
+    <img src="img/primeira-foto.jpg" alt="">
+    <h3>Esse somos nós, e nós somos compretamente apaixonados <br>
+       e logo logo vou me casar com o amor da minha vida. <br> 
+       Quer saber como isso aconteceu...</h3>
+
+       <button  onclick="window.location.href='intax02.html'" type="button">Abrir historia</button>
+       
   </div>
 
+  
 </body>
 </html>
