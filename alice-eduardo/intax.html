@@ -12,7 +12,7 @@
       background-size: cover;
     }
 
-    div{
+    .box{
 
       text-align: center;
     }
@@ -26,11 +26,44 @@
 
     }
 
+    .foto{
+
+      border: 1px solid black;
+      height: 300px;
+      margin: 30px;
+      display: flex;  
+      
+    }
+    #foto1{
+
+      
+      background-image: url(img/batera.jpg);
+      background-size: 200px;
+      background-repeat: no-repeat;
+      
+
+
+    }
+    #foto2{
+
+      background-image: url(img/primeira-foto.jpg);
+      background-size: 200px;
+      background-repeat: no-repeat;
+      margin-left: 20px;
+      
+
+
+
+    }
+    
+
+   
+
   </style>
 </head>
 <body>
 
-  <div>
+  <div class="box">
     <img src="img/primeira-foto.jpg" alt="">
     <h3>Esse somos nós, e nós somos compretamente apaixonados <br>
        e logo logo vou me casar com o amor da minha vida. <br> 
@@ -40,6 +73,23 @@
        
   </div>
 
+  <div class="foto">
+
+    <div id="foto1">
+      
+      <p>Essa é a minha versão</p>
+    </div>
+
+
+    <div id="foto2">
+
+      <p>Essa e a versão dela</p>
+
+    </div>
+
+  </div>
+
+  
   
 </body>
 </html>
