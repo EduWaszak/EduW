@@ -1,95 +1,121 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>A & E</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Para Minha Princesa</title>
+  <link rel="icon" href="images/favicon.png" />
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Poppins:wght@300;500&display=swap" rel="stylesheet">
   <style>
-
-    body{
-      background-image: url(img/fundo.jpg);
-      background-repeat: repeat;
-      background-size: cover;
-    }
-
-    .box{
-
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(to right, #fcd4e2, #ffe6f0);
+      color: #333;
       text-align: center;
     }
-
-    img{
-
-      border: 2px solid black;
-      border-radius: 5px;
-      box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.671);
-      width: 300px;
-
+    header {
+      padding: 40px 20px;
+      font-family: 'Dancing Script', cursive;
+      font-size: 2.5rem;
+      color: #c9184a;
     }
-
-    .foto{
-
-      border: 1px solid black;
-      height: 300px;
-      margin: 30px;
-      display: flex;  
-      
+    p {
+      max-width: 700px;
+      margin: 10px auto;
+      font-size: 1.2rem;
+      padding: 0 20px;
     }
-    #foto1{
-
-      
-      background-image: url(img/batera.jpg);
-      background-size: 200px;
-      background-repeat: no-repeat;
-      
-
-
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+      margin: 30px 0;
     }
-    #foto2{
-
-      background-image: url(img/primeira-foto.jpg);
-      background-size: 200px;
-      background-repeat: no-repeat;
-      margin-left: 20px;
-      
-
-
-
+    .gallery img {
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      transition: transform 0.3s ease;
     }
-    
-
-   
-
+    .gallery img:hover {
+      transform: scale(1.1);
+    }
+    .music-btn {
+      background-color: #ffb3c6;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 20px;
+      font-size: 1rem;
+      cursor: pointer;
+      margin-top: 20px;
+      transition: background 0.3s;
+    }
+    .music-btn:hover {
+      background-color: #ff8fab;
+    }
+    footer {
+      margin-top: 40px;
+      font-size: 1rem;
+      color: #555;
+      padding-bottom: 20px;
+    }
+    @media (max-width: 600px) {
+      header {
+        font-size: 2rem;
+      }
+      .gallery img {
+        width: 100px;
+        height: 100px;
+      }
+    }
   </style>
 </head>
 <body>
 
-  <div class="box">
-    <img src="img/primeira-foto.jpg" alt="">
-    <h3>Esse somos nós, e nós somos compretamente apaixonados <br>
-       e logo logo vou me casar com o amor da minha vida. <br> 
-       Quer saber como isso aconteceu...</h3>
+  <header>
+    Para a garota mais especial do mundo
+  </header>
 
-       <button  onclick="window.location.href='intax02.html'" type="button">Abrir historia</button>
-       
+  <p>
+    Alice, você é o motivo do meu sorriso, a paz no meu caos e a luz dos meus dias. <br>
+    Cada momento contigo é único, e esse site é só uma pequena forma de mostrar o quanto você significa pra mim.
+  </p>
+
+  <button class="music-btn" onclick="toggleMusic()">Tocar / Pausar Música</button>
+  <audio id="bg-music" src="YouAreSoBeautifulToMe-rayCharles.mp3" loop></audio>
+
+  <h2 style="margin-top:40px;">Nossos Momentos</h2>
+  <div class="gallery">
+    <img src="img/pula-pula.jpg" alt="Foto 1" />
+    <img src="img/vergonha.jpg" alt="Foto 2" />
+    <img src="img/primeira-foto.jpg" alt="Foto 3" />
+    <img src="img/onibus.jpg" alt="Foto 4" />
   </div>
 
-  <div class="foto">
+  <p style="font-style: italic; margin-top: 40px;">
+    "Se eu tivesse que escolher entre te amar e respirar... usaria meu último suspiro pra dizer que te amo."
+  </p>
 
-    <div id="foto1">
-      
-      <p>Essa é a minha versão</p>
-    </div>
-
-
-    <div id="foto2">
-
-      <p>Essa e a versão dela</p>
-
-    </div>
-
-  </div>
+  <footer>
+    Feito com amor pelo medico de animais
+  </footer>
 
   
-  
+
+  <script>
+    const music = document.getElementById("bg-music");
+    function toggleMusic() {
+      if (music.paused) {
+        music.play();
+      } else {
+        music.pause();
+      }
+    }
+  </script>
 </body>
 </html>

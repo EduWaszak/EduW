@@ -1,93 +1,176 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Historia</title>
-    <style>
-        body{
-
-            background-image: url(img/fundo.jpg);
-            background-repeat: repeat;
-            background-size: cover;
-            text-align: center;
-            
-
-        }
-        div{
-            border: 0px solid black;
-            width: auto;
-           
-        }
-        img{
-
-            border: 2px solid black;
-            box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.671);
-            border-radius: 5px;
-            width: 200px;
-            
-
-        }
-
-        p{
-            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-            text-align: left;
-            font-size: 20px;
-        }
-       
-
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nossa História de Amor</title>
+  <link rel="icon" href="../images/favicon.png" />
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Poppins:wght@300;500&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(to right, #ffe6f0, #f8d7e3);
+      color: #333;
+      text-align: center;
+    }
+    header {
+      padding: 40px 20px;
+      font-family: 'Dancing Script', cursive;
+      font-size: 2.5rem;
+      color: #c9184a;
+    }
+    p {
+      max-width: 750px;
+      margin: 20px auto;
+      font-size: 1.2rem;
+      padding: 0 20px;
+    }
+    .timeline {
+      max-width: 800px;
+      margin: 40px auto;
+      text-align: left;
+      padding: 0 20px;
+    }
+    .timeline h3 {
+      font-family: 'Dancing Script', cursive;
+      color: #c9184a;
+      text-align: center;
+    }
+    .event {
+      background: #fff;
+      border-left: 5px solid #ffb3c6;
+      margin: 20px 0;
+      padding: 15px 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    .event strong {
+      color: #c9184a;
+    }
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+      margin: 30px 0;
+    }
+    .gallery img {
+      width: 160px;
+      height: 160px;
+      object-fit: cover;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      transition: transform 0.3s ease;
+    }
+    .gallery img:hover {
+      transform: scale(1.07);
+    }
+    .music-btn {
+      background-color: #ffb3c6;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 20px;
+      font-size: 1rem;
+      cursor: pointer;
+      margin-top: 20px;
+      transition: background 0.3s;
+    }
+    .music-btn:hover {
+      background-color: #ff8fab;
+    }
+    footer {
+      margin-top: 40px;
+      font-size: 1rem;
+      color: #555;
+      padding-bottom: 20px;
+    }
+    @media (max-width: 600px) {
+      header {
+        font-size: 2rem;
+      }
+      .gallery img {
+        width: 100px;
+        height: 100px;
+      }
+    }
+  </style>
 </head>
 <body>
 
-    <div>
-        <h1>Nossa historia de amor</h1>
-        <h3>Nossa historia começa antes de ter 'nos', começa só comigo</h3>
-        <img src="img/oculos.jpg" alt="">
-        <p>Minha historia começa meio bizarro,
-            começa comigo jogado no sofa da casa da minha tia todo vomitado de tanto beber 
-            mais o importante é oque acontece no dia seguinte que resolvi ir ate uma igreja que ficava perto de casa, chegando la vi um pessoal que ja conhecia pois ja tinha congregado la anos  passado, entao fico mais facil me adapitar, apos mais ou menos 5 meses eu ja tinha me batizado e ja participava do ministerio de louvor.
+  <header>
+    Nossa História de Amor
+  </header>
+
+  <p>
+    Cada capítulo nosso é especial. Essa página é pra lembrar e celebrar tudo que já vivemos, e tudo que ainda vamos conquistar juntos.
+  </p>
+
+  <button class="music-btn" onclick="toggleMusic()">Tocar / Pausar Música</button>
+  <audio id="bg-music" src="../musica.mp3" loop></audio>
+
+  <div class="timeline">
+    <h3>Linha do Tempo</h3>
+
+    <div class="event">
+      <strong>O início</strong> – No crianças de 2023 eu e ela ficamos responsaveis por ajudar na festinha da igreja, eu sendo o 'Tio do pula-pula' e ela ficou no brinquedo ao lado do meu, era duas pessoas em cada brinquedo mais minha parceira ficou só no brinquedo aonde da onde a Alice estava, fazendo ela vir para o pula-pula em q eu estava, e la nos conhecemos melhor, ficamos a festa inteira juntos e conversando, ela era incrivel lembro ate hoje do sorriso timido dela do jeito que ela me olhava... Era incrivel. <br>
+      No dia seguinte foi totalmente diferente a gente nem se olhava, e eu comecei a achar que eu tinha me equivocado, que não tinha rolado clima nenhum, que era tudo coisa da minha cabeça, tempos passaram ate que fomos conhecer uma igreja chamada  Mevan, foi um culto de jovens e percebi que ela ficava toda hora me olhando, mais so ignorei. <br>
+      No final do culto ela falou com o pastor da nassa igreja dizendo que gostaria de aprender a tocar bateria, imediatamente o pastor escolheu o outro baterista pra ensinar ela mais tinha um problema, a irmã dela gostava dele então o pastor disse que eu iria ensinar ela, logo quando ele venho falar comigo eu logo abri um sorriso e aceitei ensiar ela mais o pastor deu uma condiçao nós não podiamos misturar sentimento... (inocente) . <br>
+      Então comecou as nossa aulas e cada dia ela aparecia mais linda. <br>
+      Um dia eu mandei menassagem pra ela pra mandar alguns exercicios pra ela praticar, e com uma coragem que ate hoje não sei da onde ela tirou ela me mandou menssagem perguntando como eu estava,
+            eu sem saber oq respoinder eu falei 'Estou bem, so preocupado com o futuro do brasil'... (é a menina venho flerta comigo e eu falei de politica) mais ela relevou e conseguimos cria diversos assunto era tanto nassunto que não tinha tempo pra falar tudo, e um dia era la pelas 21 da noite ela pediu pra me ligar pra contar uma sonho q ela teve... <br>
+            (O sonho se baseava em ela em um lugar com uma pessoa que ela gostava, pelo oque lembro era em um parque e ela estava com essa pessoa que não disse o nome, em algum momento do sonho eles deram as mãos e la eu percebi que essa pessoa era eu...) <br>
+            Conversa vai conversa vem e quando vi ja tinha passado das 5 da manhã, fizemos isso diversas vezes e estavamos cada vez mais proximos na igreja <br> E essa nossa priximidade chamou a atencao de nossos pais ate que colocaram a gente na parede falaram que a gente tava muito proximos e isso nao era certo teriamos que comecar uma oraçao pra saber se Deus aceitaria o nosso namoro, eu nao entendi muito bem so sabia que apos os 8 meses de oracao talves eu teria uma namorada.
+            Apos o começo da nosssa oraçao teve um retiro e ela nao entendia muito como funcionava (em um retiro inguem pode falar com nunguem) e ela achou que eu estava ignorando ela mais no final deu tudo certo.<br>
+            Na ida do retiro nos sentamos um do lado do outro no onibus e ela se deito no meu ombro, a mãe dela não gostou nada disso
+
         </p>
+        
+        
 
-        <img src="img/batera.jpg" alt="">
-
-        <hr>
-
-        <p>Tempo passou ate que um dia as pessoas começaram a me incomodar querendo me conseguir uma namorada, sinceramente eu não tava ligando pra isso, eu só queria Deus e me decidi que não iria me apaixonar.</p>
-        <p>Tempo passo e do nada aparece uma nova familia na igreja, a familia 'Bispo' e nessa familia tinha uma menina chamada Alice, foi amor a primeira vista, logo quando meus olhos encontraram os dela eu ja sabia que ela tinha algo muito expecial, só que avia um problema... 
-            ela estava acompanhada....
-        </p>
-        <p>Um tempo depois eu descobri q era irmão dela mais ate então eu não sabia por isso comecei a evitar contato visual com ela,
-            ate q no dia das crianças de 2023 eu e ela ficamos responsaveis por ajudar, eu sendo o 'Tio do pula-pula' e ela ficou no brinquedo ao lado do meu, era duas pessoas em cada brinquedo mais minha parceira ficou só no brinquedo aonde a Alice estava fazendo ela vir para o pula-pula em q eu estava, e la nos conhecemos melhor, ficamos a festa inteira juntos e conversando, ela era incrivel lembro ate hoje do sorriso timido dela do jeito que ela me olhava... Era incrivel.
-           
-        </p>
-
-        <img src="img/pula-pula.jpg" alt="">
-
-        <hr>
-
-        <p>No dia seguinte foi totalmente diferente a gente nem se olhava, e eu comecei a achar que eu tinha me equivocado, que não tinha rolado clima nenhum, que era tudo coisa da minha cabeça, tempos passaram ate que fomos conhecer uma igreja chamada  Mevan, foi um culto de jovens e percebi que ela ficava toda hora me olhando, mais so ignorei.
-        </p>
-         <p>No final do culto ela falou com o pastor da nassa igreja dizendo que gostaria de aprender a tocar bateria, imediatamente o pastor escolheu o outro baterista pra ensinar ela mais tinha um problema, a irmã dela gostava dele então o pastor disse que eu iria ensinar ela, logo quando ele venho falar comigo eu logo abri um sorriso e aceitei ensiar ela mais o pastor deu uma condiçao nós não podiamos misturar sentimento... (inocente) .
-        </p>
-        <img src="#" alt="">
-
-        <p>Então comecou as nossa aulas e cada dia ela aparecia mais linda.
-        </p>
-           <p> Um dia eu mandei menassagem pra ela pra mandar alguns exercicios pra ela praticar, e com uma coragem que ate hoje não sei da onde ela tirou ela me mandou menssagem perguntando como eu estava,
-            eu sem saber oq respoinder eu falei 'Estou bem, so preocupado com o futuro do brasil'... (é a menina venho flerta comigo e eu falei de politica) mais ela relevou e conseguimos cria diversos assunto era tanto nassunto que não tinha tempo pra falar tudo, e um dia era la pelas 21 da noite ela pediu pra me ligar pra contar uma sonho q ela teve... 
-        </p>
-
-        <p>(O sonho se baseava em ela em um lugar com uma pessoa que ela gostava, pelo oque lembro era em um parque e ela estava com essa pessoa que não disse o nome, em algum momento do sonho eles deram as mãos e la eu percebi que essa pessoa era eu...)</p>
-        <p>Conversa vai conversa vem e quando vi ja tinha passado das 5 da manhã, fizemos isso diversas vezes e estavamos cada vez mais proximos na igreja  </p>
-        <p>E essa nossa priximidade chamou a atencao de nossos pais ate que colocaram a gente na parede falaram que a gente tava muito proximos e isso nao era certo teriamos que comecar uma oraçao pra saber se Deus aceitaria o nosso namoro, eu nao entendi muito bem so sabia que apos os 8 meses de oracao talves eu teria uma namorada.</p>
-        <p>Apos o começo da nosssa oraçao teve um retiro e ela nao entendia muito como funcionava (em um retiro inguem pode falar com nunguem) e ela achou que eu estava ignorando ela</p>
-        <p>Na ida do retiro nos sentamos um do lado do outro no onibus e ela se deito no meu ombro, a mãe dela não gostou nada disso</p>
-
-        <img src="img/onibus.jpg" alt="nos no onibus">
-
+        
+        
     </div>
 
-    
+    <div class="event">
+      <strong>Primeiro "eu te amo"</strong> – O coração bateu mais forte, a voz tremeu, mas foi verdadeiro demais pra segurar.
+    </div>
+
+    <div class="event">
+      <strong>Momentos difíceis</strong> – A distância, o quartel, as saudades... mas nosso amor foi mais forte que tudo.
+    </div>
+
+    <div class="event">
+      <strong>Planos pro futuro</strong> – Japão, casamento, nossa casa, nossos filhos... tudo isso começa com a gente.
+    </div>
+  </div>
+
+  <h2 style="margin-top:40px;">Nossos Sonhos</h2>
+  <div class="gallery">
+    <img src="img/batera.jpg" alt="Viagem dos sonhos" />
+    <img src="../images/casamento.jpg" alt="Nosso casamento" />
+    <img src="../images/japao.jpg" alt="Viagem pro Japão" />
+    <img src="../images/familia.jpg" alt="Nossa família" />
+  </div>
+
+  <p style="font-style: italic; margin-top: 40px;">
+    "Tem gente que passa na vida da gente... você ficou. E é com você que eu quero seguir, pra sempre."
+  </p>
+
+  <footer>
+    Com todo meu amor, Dudu
+  </footer>
+
+  <script>
+    const music = document.getElementById("bg-music");
+    function toggleMusic() {
+      if (music.paused) {
+        music.play();
+      } else {
+        music.pause();
+      }
+    }
+  </script>
 </body>
 </html>
