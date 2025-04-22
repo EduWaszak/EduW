@@ -58,11 +58,11 @@
     }
     .gallery img {
       width: 160px;
-      height: 160px;
+      height: 200px;
       object-fit: cover;
       border-radius: 12px;
       box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-      transition: transform 0.3s ease;
+      transition: transform 1.3s ease;
     }
     .gallery img:hover {
       transform: scale(1.07);
@@ -94,6 +94,26 @@
         width: 100px;
         height: 100px;
       }
+    }
+
+    #but{
+      border: 1px solid #fc9fb6 ;
+      border-radius: 15px;
+      color: black;
+      
+
+      background-color: #fc97b0;
+      padding: 10px;
+
+
+    }
+
+    #but:hover{
+      transition: background 0.3s;
+      transform: scale(1.07);
+      transition: transform 0.3s ease;
+      background-color: #ff7195;
+
     }
   </style>
 </head>
@@ -150,17 +170,17 @@
 
   <h2 style="margin-top:40px;">Nossos Sonhos</h2>
   <div class="gallery">
-    <img src="img/batera.jpg" alt="Viagem dos sonhos" />
-    <img src="img/casamento.jpg" alt="Nosso casamento" />
-    <img src="img/japao.jpg" alt="Viagem pro Japão" />
-    <img src="img/familia.jpg" alt="Nossa família" />
+    <img src="img/casamento.jpg" alt="casamento" />
+    <img src="img/familia.jpg" alt="familia" />
+    <img src="img/japao.jpg" alt="japao" />
+    <img src="img/canada.jpg" alt="Nossa família" />
   </div>
 
   <p style="font-style: italic; margin-top: 40px;">
     "Tem gente que passa na vida da gente... você ficou. E é com você que eu quero seguir, pra sempre."
   </p>
 
-  <a href="intax.html"><button type="button">Voltar</button></a>
+  <a href="intax.html"><button id="but" type="button">Voltar</button></a>
 
   <footer>
     Com todo meu amor, Dudu
